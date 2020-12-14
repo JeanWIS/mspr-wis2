@@ -1,4 +1,4 @@
-<<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,14 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/app.css">
+
     <title>Document</title>
 </head>
 <body>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, maxime.</p>
-<div class="container">
-    <h1 class="text-black-50">flkgekrj</h1>
-</div>
+
+<main>
+    <section>
+
+        <div class="container">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, maxime.</p>
+                <h1 class="text-black-50">flkgekrj</h1>
+
+            <a href="" class="btn btn-primary"> Click me !</a>
+
+        </div>
+
+    </section>
+</main>
+
 <script src="assets/js/app.js"></script>
+
 </body>
 </html>
 
