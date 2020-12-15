@@ -1,33 +1,32 @@
-<?php
-
-include_once '../../includes/header.php'; ?>
+<?php include_once '../../includes/head.php'; ?>
+<?php include_once '../../includes/header.php'; ?>
 
     <div class="card card-body mt-5 mx-auto" style="max-width: 600px;">
-        <form id="form" action="data.php" method="POST">
+        <form id="form" action="store-post.php" method="POST">
 
             <div class="row">
                 <div class="col">
                     <div class="mb-3">
-                        <label for="title">Titre</label>
+                        <label>Titre</label>
                         <input class="form-control" name="title" id="title" required>
                     </div>
                 </div>
                 <div class="col">
                     <div class="mb-3">
-                        <label for="score-yuka">Score Yuka</label>
-                        <input class="form-control" name="score-yuka" id="score-yuka" required>
+                        <label>Score Yuka</label>
+                        <input class="form-control" name="score_yuka" id="score-yuka">
                     </div>
                 </div>
             </div>
 
             <div class="mb-3">
-                <label for="image">Image</label>
-                <input type="file" class="form-control" name="image" id="image" required>
+                <label >Image</label>
+                <input type="file" class="form-control" name="thumbnail" id="image" required>
             </div>
 
             <div class="mb-3">
-                <label for="message">Contenu de la publication</label>
-                <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+                <label>Contenu de la publication</label>
+                <textarea class="form-control" name="body" id="message" rows="5" required></textarea>
             </div>
 
             <div class="d-grid gap-2">
