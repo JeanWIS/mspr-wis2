@@ -6,6 +6,7 @@
 
 </body>
 </html>
+<?php include_once('debugbar.php'); ?>
 
 <?php
 /*
@@ -18,3 +19,4 @@ use Carbon\Carbon;
 
 */
 ?>
+
