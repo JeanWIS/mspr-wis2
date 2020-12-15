@@ -1,5 +1,6 @@
-<?php include_once('includes/header.php');?>
-<?php include_once('includes/helpers.php');?>
+<?php
+
+include_once '../../includes/header.php'; ?>
 
     <div class="card card-body mt-5 mx-auto" style="max-width: 600px;">
         <form id="form" action="data.php" method="POST">
@@ -38,4 +39,4 @@
         </form>
     </div>
 
-<?php include_once('includes/footer.php');?>
+<?php include_once('../../includes/footer.php'); ?>

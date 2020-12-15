@@ -32,8 +32,8 @@ include_once '../../includes/header.php'; ?>
                         <label for="password">Votre mot de passe</label>
                         <input type="text" id=password name=password" class="form-control" value="" required>
                         <div id="passwordHelpBlock" class="form-text">
-                            Your password must be 8-20 characters long, contain letters and numbers, and must not
-                            contain spaces, special characters, or emoji.
+                            Votre mot de passe doit être compris entre 8 et 20 caractères, doit contenir des lettres et
+                            des chiffres et ne doit pas contenir des espaces, des caractères spéciaux ou des émojis.
                         </div>
                     </div>
 
@@ -41,6 +41,11 @@ include_once '../../includes/header.php'; ?>
                         <button class="btn btn-primary" type="submit">
                             Commencer l'aventure
                         </button>
+                    </div>
+                    <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-secondary" href="">
+                        Déjà membre ?
+                    </button>
                     </div>
                 </div>
         </form>
