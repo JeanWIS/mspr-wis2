@@ -1,13 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/mspr-wis2/includes/head.php'; ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/mspr-wis2/includes/header.php'; ?>
 
-<?php
-
-echo
-
-$first_name = $_SESSION['user']['first_name'];
-
-?>
+<?php echo $first_name = $_SESSION['user']['first_name']; ?>
 
 <div class="fond">
     <div class="container">
