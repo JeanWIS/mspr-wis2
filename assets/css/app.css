@@ -48,9 +48,36 @@
   }
 }
 
-.mockup {
-  width: 50%;
+.mockup img {
+  width: 80%;
   height: auto;
+  margin-left: 7rem;
+}
+
+.team img {
+  width: 25%;
+  height: auto;
+  margin-left: 7rem;
+}
+
+.download {
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer {
+  background-color: #630887;
+  color: white;
+}
+
+.footer img {
+  width: 60%;
+  height: auto;
+}
+
+.copyright {
+  background-color: #2f0441;
+  color: white;
 }
 
 .fond {

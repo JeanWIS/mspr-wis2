@@ -13,12 +13,12 @@
         <div class="container">
             <div class="col-2">
                 <img class="img-fluid" style="height: 100px" src="assets/images/Logo-Ollakino.png"
-                     alt="Logo du Réseau social"></div>
+                     alt="Logo du réseau social"></div>
             <div class="col-6">
             </div>
             <div class="col-2 d-flex justify-content-around">
                 <a href="./pages/account/login.php" class="btn btn-secondary"> Login </a>
-                <a href="./pages/account/register.php" class="btn btn-secondary"> Sign up </a>
+                <a href="./pages/account/register.php" class="btn btn-outline-secondary"> Sign up </a>
             </div>
         </div>
     </nav>
@@ -36,17 +36,17 @@
 
                         <div class="row">
                             <div class="col-lg-6">
-                                <h1 class="d-inline-block mb-0 p-3 bg-light text-center">Mon titre</h1>
+                                <h1 class="d-inline-block text-center">Inscrivez-vous !</h1>
                                 <div class="mb-3">
                                     <label>Prénom</label>
-                                    <input class="form-control" name="first_name" id="first_name"
+                                    <input class="form-control" name="first_name" id="first_name" placeholder="Ronan"
                                            required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
                                     <label>Nom</label>
-                                    <input class="form-control" name="last_name" id="last_name"
+                                    <input class="form-control" name="last_name" id="last_name" placeholder="Met un 20 !"
                                            required>
                                 </div>
                             </div>
@@ -62,6 +62,15 @@
                             Partir à l'aventure !
                         </button>
 
+                        <div class="download d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-dark btn-sm">
+                                 Apple Store
+                            </button>
+                            <button type="button" class="btn btn-warning btn-sm">
+                                <strong>G</strong>  Play Store
+                            </button>
+                        </div>
+
                     </form>
                 </div>
 
@@ -71,10 +80,29 @@
                     <img src="https://placehold.it/10*30">
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-<?php include_once '../../includes/footer.php'; ?>
+<section>
+    <div class="row" style="min-height: calc(100vh - 300px)">
+        <div class="col-md-6 align-self-center">
+            <div class="team">
+                <img src="https://placehold.it/10*30">
+                <img src="https://placehold.it/10*30">
+                <img src="https://placehold.it/10*30">
+                <img src="https://placehold.it/10*30">
+                <img src="https://placehold.it/10*30">
+                <img src="https://placehold.it/10*30">
+            </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+            <h1 class="d-inline-block mb-0 p-3text-center">Mon titre</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi, corporis dolorum laboriosam
+                laudantium quibusdam ratione sint? Ab, ad adipisci aperiam consequatur dolorum et impedit ipsam labore
+                magnam minima mollitia, natus nemo nostrum quaerat.</p>
+        </div>
+    </div>
+</section>
+<?php include_once 'includes/footer.php'; ?>
 </body>
 </html>

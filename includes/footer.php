@@ -1,8 +1,43 @@
 </div>
 
 <footer class="footer">
-    <h3>Pied de page</h3>
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-md-3 mx-auto">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">A propos</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci alias aspernatur
+                    aut consequatur corporis culpa debitis delectus dolorem doloremque dolores doloribus error et, eum
+                    eveniet id illo ipsa molestiae, mollitia nesciunt nihil odit officiis quaerat qui quia quos ratione
+                    reiciendis suscipit totam vero, vitae voluptas voluptate! Dolores, expedita?</p>
+            </div>
+
+            <div class="col-md-3 mx-auto">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Juridique</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Politque de confidentialité</a>
+                    </li>
+                    <li>
+                        <a href="#!">Conditions générales d'utilisation</a>
+                    </li>
+                    <li>
+                        <a href="#!">Aide</a>
+                    </li>
+                    <li>
+                        <a href="#!">Lâche toi sur la note Ronan !</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mx-auto">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ollakino</h5>
+                <img src="assets/images/Logo-Ollakino.png">
+            </div>
+        </div>
+    </div>
 </footer>
+<div class="copyright text-center py-3">© 2020 Copyright:
+    <a href="https:/ollakino.com/">Ollakino.com</a>
+</div>
 
 <script src="<?php assetsPath(); ?>/js/app.js"></script>
 
