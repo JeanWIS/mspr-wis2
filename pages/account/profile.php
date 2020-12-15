@@ -1,3 +1,4 @@
+<?php include_once '../../includes/head.php'; ?>
 <?php include_once '../../includes/header.php'; ?>
 
 <div class="container" style="min-height: 300px">
