@@ -1,62 +1,52 @@
 <?php include_once '../../includes/head.php'; ?>
 <?php include_once '../../includes/header.php'; ?>
 
-<?php echo $first_name = $_SESSION['user']['first_name']; ?>
+<?php $first_name = $_SESSION['user']['first_name']; ?>
+<?php $last_name = $_SESSION['user']['last_name']; ?>
+<?php $birthday = $_SESSION['user']['birthday']; ?>
+
 
 <div class="fond">
     <div class="container">
-        <div class="row">
-            <div class="col-md">
-                <div class="card">
-                    <div class="card-body">
-                        <h1>Modifier mon profil</h1>
-                    </div>
-                </div>
+
+        <div class="row" style="min-height: calc(100vh - 300px)">
+            <div class="col-md-6 align-self-center">
+                    <h1 class="d-inline-block mb-0 p-3 bg-light text-center">Modifier mon profil</h1>
             </div>
-            <div class="col-md">
-                <?php
 
-                $posts = getUsers($_GET['id']);
-                ?>
-
-                <div class="card card-body mt-5 mx-auto" style="max-width: 600px;">
+            <div class="col-md-6 align-self-center">
+                <div class="card card-body">
                     <form id="form" action="data.php" method="POST">
 
                         <div class="row">
-                            <div class="col">
+                            <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="first_name"><?php echo $first_name ?></label>
-                                    <input class="form-control" name="first_name" id="first_name" value="gmzjljerzlkjklv" required>
+                                    <label for="first_name">Prénom</label>
+                                    <input class="form-control" name="first_name" id="first_name" value="<?php echo $first_name ?>" required>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="last_name"><?php echo ['last_name'] ?></label>
-                                    <input class="form-control" name="last_name" id="last_name" required>
+                                    <label for="last_name">Nom</label>
+                                    <input class="form-control" name="last_name" id="last_name" value="<?php echo $last_name ?>" required>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="image"><?php echo ['thumbnail'] ?></label>
-                            <input type="file" class="form-control" name="image" id="image" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="birthday"><?php echo ['birthday'] ?></label>
-                            <input type="date" class="form-control" name="birthday" id="birthday" required>
+                            <label for="birthday">Date de naissance</label>
+                            <input type="date" class="form-control" name="birthday" id="birthday" value="<?php echo $birthday ?>" required>
                         </div>
 
-                        <div class="d-grid gap-2">
-                            <button id="form-submit" type="submit" class="btn btn-primary">
+                            <button id="form-submit" type="submit" class="btn btn-primary w-100">
                                 Mettre à jour
                             </button>
-                        </div>
 
                     </form>
                 </div>
             </div>
         </div>
+
     </div>
-
 </div>
-
+<?php include_once '../../includes/footer.php'; ?>
