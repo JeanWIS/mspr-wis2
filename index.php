@@ -25,6 +25,10 @@
 </header>
 <body>
 
+<?php
+$path =$_SERVER['DOCUMENT_ROOT'];
+var_dump($path);
+?>
 
 
 </body>

@@ -1,4 +1,4 @@
-<?php require ('includes/header.php');?>
+<?php  require (' /Applications/MAMP/htdocs/mspr-wis2/includes/header.php');?>
 
 
 <div class="container-fluid">
@@ -65,5 +65,5 @@
     </div>
 </div>
 
-<?php include_once 'includes/footer.php'; ?>
+<?php include_once '/Applications/MAMP/htdocs/mspr-wis2/includes/footer.php'; ?>
 

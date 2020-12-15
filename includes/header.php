@@ -1,4 +1,4 @@
-<?php require_once 'includes/helpers.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/mspr-wis2/includes/helpers.php'; ?>
 
 <!doctype html>
 <html lang="en">
