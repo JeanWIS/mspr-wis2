@@ -1,109 +1,5 @@
 @charset "UTF-8";
 
-.article img {
-  width: 100%;
-  max-width: 30rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-}
-
-#jumbotron h1,
-#jumbotron .h1 {
-  z-index: 30;
-  background-color: #b5bec6;
-  padding: 20rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-#jumbotron .card {
-  z-index: 1000;
-}
-
-.article h1,
-.article .h1 {
-  margin-top: 2rem;
-}
-
-footer {
-  background-color: #868e96;
-  padding: 5rem;
-}
-
-.article p {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-.sidebar {
-  background-color: #630887;
-}
-
-.sidebar {
-  display: inline-block;
-  margin-left: 5rem;
-}
-
-.sidebar h3,
-.sidebar .h3 {
-  margin-top: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sidebar h4,
-.sidebar .h4 {
-  margin-top: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sidebar h6,
-.sidebar .h6 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sidebar p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sidebar img {
-  width: 100%;
-  max-width: 15rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.list-group {
-  border: none;
-  max-width: 20rem;
-}
-
-#search {
-  border-radius: 30px;
-  flex-grow: 4;
-}
-
-#button {
-  border-radius: 30px;
-  color: #630887;
-  border: #630887;
-}
-
-#logo {
-  width: 100%;
-  max-width: 3rem;
-  display: block;
-}
-
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -11692,5 +11588,116 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+.article img {
+  width: 100%;
+  max-width: 30rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+#jumbotron h1,
+#jumbotron .h1 {
+  z-index: 30;
+  background-color: #b5bec6;
+  padding: 20rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+#jumbotron .card {
+  z-index: 1000;
+}
+
+.article h1,
+.article .h1 {
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #868e96;
+  padding: 5rem;
+}
+
+.article p {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.sidebar {
+  background-color: #630887;
+}
+
+.sidebar {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.sidebar h3,
+.sidebar .h3 {
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar h4,
+.sidebar .h4 {
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar h6,
+.sidebar .h6 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar img {
+  width: 100%;
+  max-width: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-group {
+  border: none;
+  max-width: 20rem;
+}
+
+#search {
+  border-radius: 30px;
+  flex-grow: 4;
+}
+
+#button {
+  border-radius: 30px;
+  color: #630887;
+  border: #630887;
+}
+
+#logo {
+  width: 100%;
+  max-width: 3rem;
+  display: block;
+}
+
+.fond {
+  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
