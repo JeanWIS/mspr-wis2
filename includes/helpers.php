@@ -1,5 +1,9 @@
 <?php
 
+function assetsPath(){
+    echo '/mspr-wis2/assets/';
+}
+
 
 function connectDB()
 {

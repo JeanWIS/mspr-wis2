@@ -2,7 +2,7 @@
     <h3>Pied de page</h3>
 </footer>
 
-<script src="assets/js/app.js"></script>
+<script src="<?php assetsPath(); ?>/js/app.js"></script>
 
 </body>
 </html>

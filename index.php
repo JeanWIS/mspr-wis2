@@ -17,8 +17,8 @@
             <div class="col-6">
             </div>
             <div class="col-2 d-flex justify-content-around">
-                <a href="/pages/account/login.php" class="btn btn-secondary"> Login </a>
-                <a href="/pages/account/register.php" class="btn btn-secondary"> Sign up </a>
+                <a href="./pages/account/login.php" class="btn btn-secondary"> Login </a>
+                <a href="./pages/account/register.php" class="btn btn-secondary"> Sign up </a>
             </div>
         </div>
     </nav>
