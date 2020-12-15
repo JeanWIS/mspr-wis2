@@ -1,24 +1,47 @@
+<?php include_once '../../includes/header.php'; ?>
+
+<h1>Hey</h1>
+
 <?php
 
-include_once 'includes/helpers.php';
+echo $_POST['email'];
+echo $_POST['password'];
 
-session_start();
 
-$dbh = connectDB();
+$email = $_POST['email'];
+$password = md5($_POST['password']);
+$correct_login_and_pw = False;
+?>
 
-$stmt = $dbh->prepare('SELECT*FROM clients WHERE email = :email AND password = :password');
-$stmt->bindValue(':email', $_POST['email']);
-$stmt->bindValue(':password', $_POST['password']);
+<?php if ($users = getUsers()): ?>
+    <?php foreach ($users as $user): ?>
 
-$stmt->execute();
+        <?php if ($user['email'] == $email && $user['password'] == $password)
 
-$client = $stmt->fetch();
+        {
+            session_start();
+            $id = getUser_id($email, $password)['id'];
+            $_SESSION['user']['email'] = $email;
+            $_SESSION['user']['password'] = $password;
+            $_SESSION['user']['id'] = $id;
 
-if ($client == false) {
-    header("Location: login.php?id=$id");
+            $correct_login_and_pw = True; //tell php that the login & pw entered are correct
+        }
+
+        ?>
+
+    <?php endforeach; ?>
+<?php endif;
+
+
+if ($correct_login_and_pw) { // if the password
+    echo "success";
+    header("Location: /mspr-wis2/pages/feed.php?id=$id");
 } else {
-    $_SESSION['client'] = $client['id_client'];
-    header("Location: index.php?id=$id");
+    echo "wrong pw";
+    //header('Location: /fish/index.php');
 }
 
 ?>
+
+

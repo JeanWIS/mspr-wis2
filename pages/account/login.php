@@ -1,12 +1,10 @@
-<?php
-
-include_once '../../includes/header.php'; ?>
+<?php include_once '../../includes/header.php'; ?>
 
 <?php // session_start(); ?>
 
-    <div class="bg-img">
-    <div class="card card-body mt-5 mx-auto" style="max-width: 600px;">
-        <h1>Se connecter</h1>
+    <div class="bg-img" style="min-height: 500px">
+    <div class="card card-body mt-5 mx-auto p-5" style="max-width: 600px;">
+        <h1 class="text-center m-2">Se connecter</h1>
         <form action="login-action.php" id="form" method="POST">
             <div class="row">
                 <div class="col">

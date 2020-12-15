@@ -1,27 +1,19 @@
-<?php  require (' /Applications/MAMP/htdocs/mspr-wis2/includes/header.php');?>
-
+<?php include_once '../includes/header.php'; ?>
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="menu" class="col-2 d-md-block">
-            <div class="sidebar">
-                <i class="fas fa-home"></i><h4><a href="boostratp.html">Accueil</h4><br>
-                <h4><a href="#">Mon Profil</h4><br>
+        <nav id="menu" class="col-2 bg-secondary">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                        Actif
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">Lien</a>
-                    <a href="#" class="list-group-item list-group-item-action">Lien</a>
-                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1"
-                       aria-disabled="true">Disabled</a>
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true"> Feed </a>
+                    <a href="#" class="list-group-item list-group-item-action">My friends</a>
+                    <a href="./account/profile.php" class="list-group-item list-group-item-action">Profile</a>
                 </div>
-            </div>
         </nav>
         <div class="col-lg-9 col-md-8 col-sm-7">
             <div class="article row">
                 <h1>Mon titre</h1>
                 <h6>Sous-titre, 9 septembre 2020</h6>
+                <h6> <?php echo $_SESSION['user']['email']?> </h6>
                 <img src="exo.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt dolor, eius ipsam iusto
                     nihil
@@ -65,5 +57,6 @@
     </div>
 </div>
 
-<?php include_once '/Applications/MAMP/htdocs/mspr-wis2/includes/footer.php'; ?>
+<?php include_once '../includes/footer.php'; ?>
+
 
