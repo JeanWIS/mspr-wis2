@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <title>Document</title>
-</head>
-<body>
+<?php include_once ('includes/header.php');?>
 
 <header>
     <nav class="navbar navbar-expand-lg bg-primary">
@@ -93,24 +83,5 @@
     </div>
 </div>
 
-<footer>
-    <h3>Pied de page</h3>
-</footer>
-
-<script src="assets/js/app.js"></script>
-
-</body>
-</html>
-
-<?php
-/*
-
-require_once 'vendor/autoload.php'; //charger dépendnaces
-
-use Carbon\Carbon;
-
-//var_dump(Carbon::now());
-
-*/
-?>
+<?php include_once 'includes/footer.php'; ?>
 
