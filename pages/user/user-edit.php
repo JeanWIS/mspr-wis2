@@ -4,7 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md">
-                <h1>Modifier mon profil</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Modifier mon profil</h1>
+                    </div>
+                </div>
             </div>
             <div class="col-md">
                 <?php
