@@ -25,12 +25,6 @@
 </header>
 <body>
 
-<?php
-echo md5('password');
-
-
-?>
-
 
 </body>
 </html>

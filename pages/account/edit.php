@@ -1,5 +1,5 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/mspr-wis2/includes/head.php'; ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/mspr-wis2/includes/header.php'; ?>
+<?php include_once '../../includes/head.php'; ?>
+<?php include_once '../../includes/header.php'; ?>
 
 <?php echo $first_name = $_SESSION['user']['first_name']; ?>
 
