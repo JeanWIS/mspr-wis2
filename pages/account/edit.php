@@ -16,25 +16,25 @@
 
             <div class="col-md-6 align-self-center">
                 <div class="card card-body">
-                    <form id="form" action="data.php" method="POST">
+                    <form id="form" action="update.php" method="POST">
 
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="first_name">Prénom</label>
+                                    <label >Prénom</label>
                                     <input class="form-control" name="first_name" id="first_name" value="<?php echo $first_name ?>" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-3">
-                                    <label for="last_name">Nom</label>
+                                    <label >Nom</label>
                                     <input class="form-control" name="last_name" id="last_name" value="<?php echo $last_name ?>" required>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="birthday">Date de naissance</label>
+                            <label >Date de naissance</label>
                             <input type="date" class="form-control" name="birthday" id="birthday" value="<?php echo $birthday ?>" required>
                         </div>
 
