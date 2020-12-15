@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
     <h3>Pied de page</h3>
 </footer>
 
