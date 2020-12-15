@@ -27,4 +27,4 @@ $query->bindValue(':id', $data['id']);
 $query->execute($data);
 
 
-//header('');
+header("Location: /mspr-wis2/pages/feed.php?id=$id");
