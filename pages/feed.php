@@ -1,21 +1,6 @@
 <?php include_once '../includes/head.php'; ?>
 <?php include_once '../includes/header.php'; ?>
-
-<div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Start Bootstrap</div>
-        <div class="list-group list-group-flush">
-            <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-        </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
+<?php  include_once '../includes/sidebar.php' ?>
 
     <!-- Page Content -->
     <div class="container p-5">
@@ -39,9 +24,8 @@
             possimus quia ratione voluptatem voluptatibus. At, quam voluptate!</p>
         <hr/>
     </div>
-    <!-- /#page-content-wrapper -->
+    <!-- /#page-content -->
 
-</div>
 
 <?php include_once '../includes/footer.php'; ?>
 

@@ -1,8 +1,13 @@
-<nav id="menu" class="col-2 bg-secondary">
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true"> Feed </a>
-        <a href="#" class="list-group-item list-group-item-action">My friends</a>
-        <a href="./account/profile.php" class="list-group-item list-group-item-action">Profile</a>
-        <a href="./post/add.php" class="list-group-item list-group-item-action">Add a new recipe</a>
+<div class="d-flex" id="wrapper">
+
+<!-- Sidebar -->
+<div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Start Bootstrap</div>
+    <div class="list-group list-group-flush">
+        <a href="/mspr-wis2/pages/feed.php" class="list-group-item list-group-item-action bg-light">Feed</a>
+        <a href="/mspr-wis2/pages/.php" class="list-group-item list-group-item-action">Profile</a>
+        <a href="/mspr-wis2/pages/post/add.php" class="list-group-item list-group-item-action bg-light">Add a new recipe</a>
+        <a href="/mspr-wis2/pages/post/my-posts.php" class="list-group-item list-group-item-action bg-light">See all my recipes</a>
     </div>
-</nav>
+</div>
+<!-- /#sidebar -->

@@ -4,7 +4,6 @@
 <div class="container-fluid">
     <div class="row">
 
-
         <nav id="sidebar" class="col-2 bg-secondary" style="height: 100%">
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action active" aria-current="true"> Feed </a>
@@ -14,7 +13,6 @@
                 <a href="./post/my-posts.php" class="list-group-item list-group-item-action">see all my recipes</a>
             </div>
         </nav>
-
 
     </div>
 </div>
