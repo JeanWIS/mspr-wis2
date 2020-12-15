@@ -1,4 +1,4 @@
-<?php include_once ('includes/header.php');
+<?php include_once('includes/header.php');
 echo include_once 'includes/helpers.php';
 
 $id = $_GET['id'];

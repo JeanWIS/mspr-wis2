@@ -1,5 +1,5 @@
-<?php include_once ('includes/header.php');?>
-<?php include_once ('includes/helpers.php');
+<?php include_once('includes/header.php');?>
+<?php include_once('includes/helpers.php');
 
 session_start();
 
@@ -22,4 +22,4 @@ session_start();
     </form>
 </div>
 
-<?php include_once ('includes/footer.php');?>
+<?php include_once('includes/footer.php');?>
