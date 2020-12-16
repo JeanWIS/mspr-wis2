@@ -62,7 +62,7 @@
 
                 </tbody>
             </table>
-            <a class="btn btn-primary bg-info mt-4">Add a new Friend</a>
+            <a class="btn btn-primary bg-info mt-4" href="all-users.php">Add a new Friend</a>
 
 
 </article>

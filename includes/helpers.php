@@ -48,11 +48,11 @@ function getUser($user_id) { /* User's Profile */
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
 }
 
-/* CRUD Friends, create a new request, accept the request, declined the request, Remove a friend  */
+/* CRUD Friends, Are we friends,   */
 
-function follow($user_id) { // Find user name, email, ... using his id
+function areWeFriends($user_id, $friend_id) { // Find user name, email, ... using his id
     $dbh = connectDB();
-    $stmt = $dbh->query("SELECT * FROM users WHERE id = '$user_id'");
+    $stmt = $dbh->query("SELECT * FROM `friends` WHERE user_id = '$user_id' && friend_id = '$friend_id'");
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
 }
 
