@@ -27,7 +27,19 @@ function getUser_id($email, $password)
 {
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM users WHERE email = '$email' && password = '$password' ");
-    return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
+    return $stmt->fetch(PDO::FETCH_ASSOC); // one to show
+}
+
+function getFriend($my_id) { // diosplay all friends, statu 1 == my Friend
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT friend_id FROM friends WHERE user_id = '$my_id' && status = 1");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
+}
+
+function getUser($user_id) { // Find user name, email, ... using his id
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM users WHERE id = '$user_id'");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
 }
 
 
