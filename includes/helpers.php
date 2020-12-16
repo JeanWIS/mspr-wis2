@@ -50,7 +50,7 @@ function getUser($user_id) { /* User's Profile */
 
 /* CRUD Friends, create a new request, accept the request, declined the request, Remove a friend  */
 
-function requestInvita($user_id) { // Find user name, email, ... using his id
+function follow($user_id) { // Find user name, email, ... using his id
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM users WHERE id = '$user_id'");
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
