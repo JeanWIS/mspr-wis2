@@ -30,7 +30,7 @@
             </div>
             <div class="col-md-3 mx-auto">
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ollakino</h5>
-                <img src="assets/images/Logo-Ollakino.png">
+                <img src="../../assets/images/Logo-Ollakino.png">
             </div>
         </div>
     </div>
