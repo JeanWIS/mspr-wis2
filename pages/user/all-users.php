@@ -1,13 +1,11 @@
 <?php include_once '../../includes/head.php'; ?>
 <?php include_once '../../includes/header.php'; ?>
-<?php include_once '../../includes/sidebar.php'; ?>
 
-<!-- Friend_Status: 0 not_friend
-                    1 friend
-                    2 pending
--->
+<main id="main">
 
-<article id="my-friend">
+    <?php include_once '../../includes/sidebar.php' ?>
+
+    <section id="content">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1>Agrandissez votre monde de la cusine !</h1>
@@ -47,6 +45,10 @@
 <form method="post">
     <textarea id="mytextarea">Hello, World!</textarea>
 </form>
+
+    </section>
+
+</main>
 
 
 <?php include_once '../../includes/footer.php'; ?>

@@ -1,6 +1,4 @@
-</div>
-
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="container text-center text-md-left">
         <div class="row">
             <div class="col-md-3 mx-auto">
@@ -35,7 +33,9 @@
         </div>
     </div>
 </footer>
-<div class="copyright text-center py-3">© 2020 Copyright:
+
+<div class="copyright text-center py-3">
+    <span>© 2020 Copyright:</span>
     <a href="https:/ollakino.com/">Ollakino.com</a>
 </div>
 

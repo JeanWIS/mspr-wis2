@@ -1,9 +1,14 @@
 @import "variables";
+
+@import "~bootstrap";
+
+@import "components/main";
+@import "components/sidebar";
+
 @import "feed";
 @import "index";
 @import "footer";
-@import "components/sidebar";
 @import "forms-add";
 @import "register";
 @import "edit-profil";
-@import "~bootstrap";
+

@@ -1,117 +1,6 @@
 @charset "UTF-8";
 
 /*!
- * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
- */
-
-#wrapper {
-  overflow-x: hidden;
-}
-
-#sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -15rem;
-  transition: margin 0.25s ease-out;
-}
-
-#sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
-}
-
-#sidebar-wrapper .list-group {
-  width: 15rem;
-}
-
-#page-content-wrapper {
-  min-width: 100vw;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
-}
-
-@media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
-
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
-}
-
-.mockup img {
-  width: 80%;
-  height: auto;
-  margin-left: 7rem;
-}
-
-.team img {
-  width: 25%;
-  height: auto;
-  margin-left: 7rem;
-}
-
-.download {
-  margin-top: 1.5rem;
-  margin-bottom: 0.3rem;
-}
-
-.footer {
-  background-color: #630887;
-  color: white;
-}
-
-.footer img {
-  width: 60%;
-  height: auto;
-}
-
-.copyright {
-  background-color: #2f0441;
-  color: white;
-}
-
-.sidebar {
-  background-color: #1c1f23;
-}
-
-.sidebar .sidebar-heading {
-  color: white;
-}
-
-.bg-img {
-  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 3rem;
-}
-
-.bg-img {
-  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 3rem;
-}
-
-.fond {
-  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -11699,5 +11588,130 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+#main {
+  display: flex;
+  width: 100%;
+}
+
+#main #sidebar {
+  min-width: 300px;
+}
+
+#main #content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.sidebar {
+  background-color: #1c1f23;
+}
+
+.sidebar .sidebar-heading {
+  color: white;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.mockup img {
+  width: 80%;
+  height: auto;
+  margin-left: 7rem;
+}
+
+.team img {
+  width: 25%;
+  height: auto;
+  margin-left: 7rem;
+}
+
+.download {
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer {
+  background-color: #630887;
+  color: white;
+}
+
+.footer img {
+  width: 60%;
+  height: auto;
+}
+
+.copyright {
+  background-color: #2f0441;
+  color: white;
+}
+
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+.fond {
+  background-image: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2870&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
