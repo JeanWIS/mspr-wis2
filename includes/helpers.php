@@ -72,3 +72,12 @@ function getMyFeedPosts ($friend_id) {
     return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
 }
 /* END ••• See  my feed, with all posts from my posts  \ Post / */
+
+
+// find "id" using pw and email
+function getPost_id($email, $password)
+{
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM posts WHERE email = '$email' && password = '$password' ");
+    return $stmt->fetch(PDO::FETCH_ASSOC); // one to show
+}

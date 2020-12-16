@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
             <div class="col-2">
-                <img class="img-fluid" style="height: 100px" src="../../assets/images/Logo-Ollakino.png"
+                <img class="img-fluid" style="height: 100px" src="https://cdn.discordapp.com/attachments/788842884065132607/788843163144945664/Logo-Ollakino.png"
                      alt="Logo du Réseau social"></div>
             <div class="col-6">
                 <form class="d-flex">
