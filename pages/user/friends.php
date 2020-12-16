@@ -30,9 +30,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php if ($id_friends = getFriend($id)): ?>
+                <?php if ($id_friends = getFriendId($id)): ?>
                     <?php foreach ($id_friends as $id_friend): ?>
-                        <?php if ($friends = getUser($id_friend['friend_id'])): ?>
+                        <?php if ($friends = getFriend($id_friend['friend_id'])): ?>
                             <?php foreach ($friends as $friend): ?>
 
                                 <tr>

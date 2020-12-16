@@ -37,7 +37,7 @@
 
                                     <td>
                                         <a type="button" class="btn btn-outline-primary"
-                                           href="assets/cart/add-cart.php?id=<?php echo $friend['id']; ?>"> View profile
+                                           href="user.php?id=<?php echo $friend['id']; ?>"> View profile
                                         </a>
                                     </td>
                                 </tr>
