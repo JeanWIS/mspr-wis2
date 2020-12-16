@@ -43,7 +43,7 @@
 
                                     <td>
                                         <a type="button" class="btn btn-danger"
-                                           href="assets/delete-friend.php?id=<?php echo $friend['id']; ?>">
+                                           href="delete-friend.php?id=<?php echo $friend['id']; ?>">
                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash"
                                                  fill="currentColor"
                                                  xmlns="http://www.w3.org/2000/svg">

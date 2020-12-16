@@ -1,30 +1,39 @@
 <?php include_once '../includes/head.php'; ?>
 <?php include_once '../includes/header.php'; ?>
-<?php  include_once '../includes/sidebar.php' ?>
+<?php include_once '../includes/sidebar.php' ?>
 
-    <!-- Page Content -->
-    <div class="container p-5">
-        <h1>Mon titre</h1>
-        <h6>Sous-titre, 9 septembre 2020</h6>
-        <h6> <?php echo $_SESSION['user']['email'] ?> </h6>
-        <img src="exo.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt dolor, eius ipsam iusto
-            nihil
-            numquam possimus quod reiciendis similique. Asperiores autem culpa dolores nemo nostrum quaerat
-            suscipit
-            voluptatum! Accusamus ad aliquam animi blanditiis, cum cumque cupiditate debitis deleniti deserunt
-            dolorum
-            eligendi error facilis itaque iure modi molestias nam officiis pariatur quibusdam ratione reiciendis
-            reprehenderit repudiandae saepe sit soluta totam voluptatem voluptatibus? Architecto, aspernatur
-            commodi
-            consequatur debitis dicta dignissimos ea eaque eius facilis in nobis possimus quasi reprehenderit
-            saepe sunt
-            ullam vero voluptatum. Aperiam commodi delectus dignissimos dolorum necessitatibus omnis placeat,
-            porro,
-            possimus quia ratione voluptatem voluptatibus. At, quam voluptate!</p>
-        <hr/>
+<div class="row">
+    <div class="col-10">
+        <?php
+        if ($friends_id = getMyFeed($_SESSION['user']['id'])) :
+            foreach ($friends_id as $friend_id) :
+                if ($posts = getMyFeedPosts($friend_id['friend_id'])) :
+                    foreach ($posts as $post) :
+                        ?>
+                        <!-- Page Content -->
+                        <div class="container p-5">
+                            <h1> <?php echo $post['title'] ?> </h1>
+                            <h6><?php echo $post['created_at'] ?> </h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="<?php echo $post['thumbnail'] ?>" alt="" class="img-fluid img-thumbnail ">
+                                </div>
+                                <div class="col-6"><p><?php echo $post['body'] ?></p>
+                                    <a href="" class="btn btn-primary">See post</a>
+                                </div>
+                            </div>
+
+                            <hr/>
+                        </div>
+                        <!-- /#page-content -->
+                    <?php
+                    endforeach;
+                endif;
+            endforeach;
+        endif;
+        ?>
     </div>
-    <!-- /#page-content -->
+</div>
 
 
 <?php include_once '../includes/footer.php'; ?>

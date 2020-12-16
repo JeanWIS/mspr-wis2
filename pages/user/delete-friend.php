@@ -18,7 +18,7 @@ $stmt->bindValue(':user_id', $id);
 $stmt->bindValue(':friend_id', $friend_id);
 $stmt->execute();
 
-header("Location: http://localhost:8888/mspr-wis2/pages/user/user.php?id=$friend_id");
+header("Location: http://localhost:8888/mspr-wis2/pages/user/friends.php");
 
 ?>
 <?php include_once '../../includes/footer.php'; ?>

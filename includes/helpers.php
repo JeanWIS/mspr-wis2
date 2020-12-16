@@ -56,3 +56,19 @@ function areWeFriends($user_id, $friend_id) { // Find user name, email, ... usin
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
 }
 
+/* See  my feed, with all posts from my posts \ ID /  */
+function getMyFeed ($my_id) {
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT friend_id FROM `friends` WHERE user_id = '$my_id'");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
+}
+/* END ••• See  my feed, with all posts from my posts  \ ID / */
+
+
+/* See  my feed, with all posts from my posts \ Post /  */
+function getMyFeedPosts ($friend_id) {
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM `posts` WHERE user_id = '$friend_id'");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
+}
+/* END ••• See  my feed, with all posts from my posts  \ Post / */
