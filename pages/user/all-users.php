@@ -41,10 +41,9 @@
         <a class="btn btn-primary bg-info mt-4">Ajouter un nouvel ami</a>
     </div>
 </article>
-<h1>TinyMCE Quick Start Guide</h1>
-<form method="post">
-    <textarea id="mytextarea">Hello, World!</textarea>
-</form>
+
+
+
 
     </section>
 

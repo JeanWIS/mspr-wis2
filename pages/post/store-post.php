@@ -7,7 +7,7 @@ $values = [
     'title' => $_POST['title'],
     'body' => $_POST['body'],
     'score_yuka' => $_POST['score_yuka'],
-    'thumbnail' => "https://picsum.photos/1000/800",
+    'thumbnail' => $_POST['img'],
     'user_id' => $_SESSION['user']['id'],
 ];
 

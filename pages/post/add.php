@@ -22,12 +22,12 @@
 
                 <div class="mb-3">
                     <label >Image</label>
-                    <input type="file" class="form-control" name="thumbnail" id="image" required>
+                    <input type="url" class="form-control" name="thumbnail" id="image" required>
                 </div>
 
                 <div class="mb-3">
                     <label>Contenu de la publication</label>
-                    <textarea class="form-control" name="body" id="message" rows="5" required></textarea>
+                    <textarea class="form-control" name="body" id="mytextarea" rows="5" ></textarea>
                 </div>
 
                 <div class="d-grid gap-2">
