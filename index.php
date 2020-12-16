@@ -57,6 +57,11 @@
                             <input type="date" class="form-control" name="birthday" id="birthday"
                                    required>
                         </div>
+                        <div class="mb-3">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                   required>
+                        </div>
 
                         <button id="form-submit" type="submit" class="btn btn-primary w-100">
                             Partir à l'aventure !
