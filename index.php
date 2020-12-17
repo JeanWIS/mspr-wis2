@@ -30,13 +30,10 @@
 
         <div class="row" style="min-height: calc(100vh - 300px)">
 
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-6 align-self-center p-5">
                 <?php  include_once './includes/forms_register_home.php' ?>
             </div>
             <div class="col-md-6 align-self-center">
-                <div class="mockup">
-                    <img src="https://placehold.it/10*30">
-                </div>
             </div>
         </div>
     </div>
@@ -45,12 +42,9 @@
     <div class="row" style="min-height: calc(100vh - 300px)">
         <div class="col-md-6 align-self-center">
             <div class="team">
-                <img src="https://placehold.it/10*30">
-                <img src="https://placehold.it/10*30">
-                <img src="https://placehold.it/10*30">
-                <img src="https://placehold.it/10*30">
-                <img src="https://placehold.it/10*30">
-                <img src="https://placehold.it/10*30">
+                <img src="assets/images/lasagna.jpg">
+                <img src="assets/images/cucumber.jpg">
+                <img src="assets/images/cherries.jpg">
             </div>
         </div>
         <div class="col-md-6 align-self-center">

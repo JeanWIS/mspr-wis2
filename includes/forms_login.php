@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col-md">
+<div class="row p-5">
+    <div class="col-md mt-5">
         <div class="card">
             <div class="card-body">
                 <h1>Prêt à partager vos recettes ?</h1>
@@ -20,7 +20,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label for="password">Votre mot de passe</label>
-                            <input class="form-control" name="password" id="password" required>
+                            <input type="password" class="form-control" name="password" id="password" required>
                         </div>
                     </div>
                 </div>
