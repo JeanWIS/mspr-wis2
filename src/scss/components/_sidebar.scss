@@ -1,8 +1,14 @@
 .sidebar {
-  background-color: #1c1f23;
+  background-color: black;
+
+  .container{
+    text-align: center;
+    font-size: 2rem;
+  }
 
   .sidebar-heading {
     color: white;
+    align-items: center;
 
     .list-group {
 

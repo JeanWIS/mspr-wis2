@@ -1,6 +1,7 @@
 <?php include_once '../../includes/head.php'; ?>
 <?php include_once '../../includes/header.php'; ?>
     <div class="bg-img" style="min-height: 500px">
+        <a class="btn btn-secondary" href="../../pages/user/friends.php">Retour en arrière</a>
         <div class="card card-body mt-5 mx-auto" style="max-width: 600px;">
             <form id="form" action="store-post.php" method="POST">
 

@@ -11605,11 +11605,17 @@ fieldset:disabled .btn {
 }
 
 .sidebar {
-  background-color: #1c1f23;
+  background-color: black;
+}
+
+.sidebar .container {
+  text-align: center;
+  font-size: 2rem;
 }
 
 .sidebar .sidebar-heading {
   color: white;
+  align-items: center;
 }
 
 /*!

@@ -19,7 +19,7 @@
                     ?>
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1>All Friends</h1>
+                            <h1>Tous mes amis</h1>
                         </div>
                     </div>
 
@@ -27,10 +27,10 @@
                         <table class="table">
                             <thead>
                             <tr>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">BirthDay</th>
-                                <th scope="col">FriendZone</th>
+                                <th scope="col">Prénom</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Date de naissance</th>
+                                <th scope="col">Supprimer cet ami</th>
 
                             </tr>
                             </thead>
@@ -68,7 +68,7 @@
 
                             </tbody>
                         </table>
-                        <a class="btn btn-primary bg-info mt-4" href="all-users.php">Add a new Friend</a>
+                        <a class="btn btn-primary mt-4" href="all-users.php">Ajouter de nouveaux amis</a>
 
 
                     </div>
