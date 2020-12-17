@@ -27,60 +27,66 @@ if ($isPostLikedByMe) {
         <?php include_once '../../includes/sidebar.php' ?>
 
         <section id="content">
-            <div class="container">
+            <div class="card">
                 <div class="row">
+                    <img src="<?php echo $post['thumbnail']; ?>" class="img-fluid" alt="" style="width:40%;">
                     <div class="col-10">
-                        <img src="<?php echo $post['thumbnail']; ?>" class="img-fluid" alt="">
-                        <h2> <?php echo $post['title']; ?>  </h2>
-                        <h2> Yuka ==> <?php echo $post['score_yuka']; ?>  </h2>
-                        <p> <?php echo $post['body']; ?>  </p>
+                        <div class="row">
+                            <div class="col-1"> </div>
+                            <div class="col-8">
 
-                        <?php if ($post['user_id'] === $id):
-                            ?>
-                            <a type="button" class="btn btn-danger"
-                               href="delete.php?id=<?php echo $post['id']; ?>">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16"
-                                     class="bi bi-trash"
-                                     fill="currentColor"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                    <path fill-rule="evenodd"
-                                          d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                                </svg>
-                                Delete my Post </a>
-                            <a href="" class="btn btn-secondary">Update My post</a>
-                        <?php
-
-                        else:
-                            ?>
-                            <div class="d-flex align-content-end">
-                                <?php
-                                /* Code for the like button */
-
-                                $isPostLikedByMe = isPostLiked($user_id, $id);
-                                $notLiked = true; // default true this post is not liked
-
-                                if ($isPostLikedByMe) {
-                                    if ($isPostLikedByMe['status'] == 1) {
-                                        ?>
-                                        <a href="../like/like-store.php?id=<?php echo $post['id']; ?>">
-                                            <i class="fas fa-bookmark fa-10x"></i>
-                                        </a>
+                                <div class="container mt-3">
+                                    <h5 class="card-title"> <?php echo $post['title']; ?>  </h5>
+                                    <h6 class="yuka"> Score Yuka : <?php echo $post['score_yuka']; ?>  </h6>
+                                    <p class="card-text"> <?php echo $post['body']; ?>  </p>
+                                </div>
+                            </div> <!-- Content -->
+                            <div class="col-1 p-5 ">
+                                <?php if ($post['user_id'] === $id): ?>
+                                <?php else: ?>
+                                    <div class="d-flex align-content-end">
                                         <?php
-                                        $notLiked = false;
-                                    }
-                                } // the user already like the post
-                                if ($notLiked) {
-                                    ?>
-                                    <i class="far fa-bookmark fa-10x"></i>
-                                    <?php
-                                } // The user didn't like the post
-                                ?>
+                                        /* Code for the like button */
 
-                            </div>
-                        <?php
-                        endif;
-                        ?>
+                                        $isPostLikedByMe = isPostLiked($user_id, $id);
+                                        $notLiked = true; // default true this post is not liked
+
+                                        if ($isPostLikedByMe) {
+                                            if ($isPostLikedByMe['status'] == 1) {
+                                                ?>
+                                                <a href="../like/like-store.php?id=<?php echo $post['id']; ?>">
+                                                    <i class="fas fa-bookmark fa-4x"></i>
+                                                </a>
+                                                <?php
+                                                $notLiked = false;
+                                            }
+                                        } // the user already like the post
+                                        if ($notLiked) {
+                                            ?>
+                                            <a href="../like/like-store.php?id=<?php echo $post['id']; ?>">
+                                                <i class="far fa-bookmark fa-4x"></i>
+                                            </a>
+                                            <?php
+                                        } // The user didn't like the post
+                                        ?>
+
+                                    </div>
+                                <?php endif; ?>
+                            </div><!-- SAVE -->
+                        </div>
+
+                        <div class="container">
+                            <a type="button" class="btn btn btn-danger w-100 mb-3"
+                               href="delete.php?id=<?php echo $post['id']; ?>">
+                                <i class="fas fa-trash text-white"></i>
+                                <span>Supprimer mon post</span>
+                            </a>
+                            <a href="" class="btn btn-secondary d-grid gap-2 ">Mettre à jour mon post</a>
+                        </div> <!-- BTN -->
+
+                        <div class="card-header">
+                            <!---LIKE AND OTHER BTN-->
+                        </div>
 
                     </div>
                 </div>

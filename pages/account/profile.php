@@ -22,7 +22,7 @@ $last_name = $_SESSION['user']['last_name'];
 
                 </div>
 
-                <div class="card card-body mt-5 mx-auto" style="max-width: 600px;">
+                <div class="card card-body mt-5 mx-auto" style="max-width: 600px; z-index: 2;">
                     <form id="form" action="../post/store-post.php" method="POST">
 
                         <div class="row">

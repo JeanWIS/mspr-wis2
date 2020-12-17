@@ -91,11 +91,9 @@ function getPost($user_id) { // Find user name, email, ... using his id
 }
 /* END ••• See post  \ Post / */
 
-
 /* Is this post liked   */
 function isPostLiked($post_id, $user_id) { // Find user name, email, ... using his id
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM `likes` WHERE post_id = '$post_id' && user_id = '$user_id'");
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
 }
-

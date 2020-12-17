@@ -11599,11 +11599,17 @@ fieldset:disabled .btn {
 
 #main #sidebar {
   min-width: 300px;
+  z-index: 800;
 }
 
 #main #content {
   flex-grow: 1;
   padding: 2rem;
+  z-index: 2;
+}
+
+#main #content #footer {
+  z-index: 800;
 }
 
 .sidebar {
@@ -11742,5 +11748,6 @@ fieldset:disabled .btn {
 #header {
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
