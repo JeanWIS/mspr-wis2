@@ -59,19 +59,22 @@ if ($isPostLikedByMe) {
 
                                 $isPostLikedByMe = isPostLiked($user_id, $id);
                                 $notLiked = true; // default true this post is not liked
+
                                 if ($isPostLikedByMe) {
                                     if ($isPostLikedByMe['status'] == 1) {
                                         ?>
-                                        <i class="fas fa-bookmark fa-10x text-secondary"></i>
+                                        <a href="../like/like-store.php?id=<?php echo $post['id']; ?>">
+                                            <i class="fas fa-bookmark fa-10x"></i>
+                                        </a>
                                         <?php
                                         $notLiked = false;
                                     }
-                                }
+                                } // the user already like the post
                                 if ($notLiked) {
                                     ?>
-                                    <i class="far fa-bookmark fa-10x text-secondary"></i>
+                                    <i class="far fa-bookmark fa-10x"></i>
                                     <?php
-                                }
+                                } // The user didn't like the post
                                 ?>
 
                             </div>
