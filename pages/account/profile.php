@@ -108,7 +108,6 @@ $last_name = $_SESSION['user']['last_name'];
         ?>
     </div>
 
-
 </main>
 
 <?php include_once '../../includes/footer.php'; ?>

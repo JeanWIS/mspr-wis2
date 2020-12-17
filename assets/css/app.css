@@ -11593,6 +11593,8 @@ fieldset:disabled .btn {
 #main {
   display: flex;
   width: 100%;
+  padding-top: 116px;
+  z-index: 1000;
 }
 
 #main #sidebar {
@@ -11608,14 +11610,20 @@ fieldset:disabled .btn {
   background-color: black;
 }
 
+.sidebar .sidebar-fixe {
+  position: fixed;
+}
+
 .sidebar .container {
   text-align: center;
   font-size: 2rem;
 }
 
-.sidebar .sidebar-heading {
+.sidebar .container .sidebar-heading {
   color: white;
   align-items: center;
+  padding: 1rem;
+  display: block;
 }
 
 /*!
@@ -11719,5 +11727,10 @@ fieldset:disabled .btn {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
 }
 
