@@ -5,6 +5,8 @@
 $user_id = $_GET['id']; // get the id in the URL of the post
 // Execute the function that will find the post with the id from the URL
 
+
+
 ?>
 
 <main id="main">
@@ -16,6 +18,7 @@ $user_id = $_GET['id']; // get the id in the URL of the post
             <div class="row">
                 <div class="col-10">
 
+                    
 
 
                 </div>
