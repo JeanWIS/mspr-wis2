@@ -41,6 +41,40 @@
             <a class="btn btn-primary bg-info mt-4">Ajouter un nouvel ami</a>
         </div>
 
+    </div>
+    <div class="container">
+        <table class="table w-100">
+            <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Let's connect</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <?php if ($friends = getUsers()): ?>
+                <?php foreach ($friends as $friend): ?>
+                    <tr>
+                        <td><?php echo $friend['first_name'] ?></td>
+                        <td><?php echo $friend['last_name'] ?></td>
+                        <td>
+                            <a type="button" class="btn btn-outline-primary"
+                               href="user.php?id=<?php echo $friend['id']; ?>"> Voir son profil
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
+            </tbody>
+        </table>
+        <a class="btn btn-primary bg-info mt-4">Ajouter un nouvel ami</a>
+    </div>
+</article>
+
+
+
+
     </section>
 
 </main>
