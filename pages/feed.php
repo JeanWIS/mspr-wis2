@@ -22,7 +22,25 @@
                                     <!-- Page Content -->
                                     <div class="container p-5">
                                         <h1> <?php echo $post['title'] ?> </h1>
-                                        <h6><?php echo $post['created_at'] ?> </h6>
+                                        <h6><?php echo $post['created_at'];
+
+
+
+                                            //Permet de charger les dépendances php
+require_once '../vendor/autoload.php';
+// On utilise Carbon pour gérer les dates
+use Carbon\Carbon;
+//Fuseau defini sur Paris
+date_default_timezone_set('Europe/Paris');
+// Transforme le texte en date
+$date = Carbon::make('2020-09-29 11:46:00')->locale('fr-FR');
+//Affiche  la différence par rapport à maintenant de maniere comprehensible
+echo $date->diffForHumans();
+
+
+
+
+                                            ?> </h6>
                                         <div class="row">
                                             <div class="col-6">
                                                 <img src="<?php echo $post['thumbnail'] ?>" alt=""

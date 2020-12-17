@@ -45,9 +45,10 @@
                 <img src="assets/images/lasagna.jpg">
                 <img src="assets/images/cucumber.jpg">
                 <img src="assets/images/cherries.jpg">
+                <img src="assets/images/food.jpg">
             </div>
         </div>
-        <div class="col-md-6 align-self-center">
+        <div class="col-md-6 align-self-center p-5">
             <h1 class="d-inline-block mb-0 p-3text-center">Mon titre</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi, corporis dolorum laboriosam
                 laudantium quibusdam ratione sint? Ab, ad adipisci aperiam consequatur dolorum et impedit ipsam labore
