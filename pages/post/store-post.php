@@ -15,8 +15,8 @@ $dbh = connectDB();
 $query = $dbh->prepare('INSERT INTO posts (title, body, score_yuka, thumbnail , user_id	 ) VALUES (:title, :body, :score_yuka, :thumbnail, :user_id ) ');
 $query->execute($values);
 
+$post = getPost_id($values['body'], $values['title'], $values['user_id']);
+$id = $post['id'];
 
-
-
-//header("Location: post.php?id=$id");
+header("Location: post.php?id=$id");
 ?>

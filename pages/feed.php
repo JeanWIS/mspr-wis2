@@ -33,8 +33,7 @@
                                                 </div>
                                                 <div class="content-post mt-3">
                                                     <?php
-
-                                                    // strip tags to avoid breaking any html
+                                                    // show only 500 character on the feed.php
                                                     $TextMore500 = true;
                                                     $string = strip_tags($post['body']);
                                                     if (strlen($string) > 500) {
@@ -45,11 +44,14 @@
 
                                                         //if the string doesn't contain any space then it will cut without word basis.
                                                         $string = $endPoint ? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
-                                                        $string .= '... <br><a href="user.php?id=$id> class="btn btn-primary mt-3">See more</a>';
+                                                        $string .= '... <br>';
                                                         $TextMore500 = false;
                                                     }
-                                                    echo $string . "<br>";
-                                                    if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary " >See
+                                                    echo $string;
+                                                    if (strlen($string) > 500) :
+                                                    ?> <a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">See more</a><br> <?php
+                                                    endif;
+                                                    if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" >See
                                                         Post</a> <?php
                                                     } ?>
                                                 </div>

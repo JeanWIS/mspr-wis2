@@ -74,10 +74,19 @@ function getMyFeedPosts ($friend_id) {
 /* END ••• See  my feed, with all posts from my posts  \ Post / */
 
 
-// find "id" using pw and email
-function getPost_id($email, $password)
+/* See post \ Store-post / */
+function getPost_id($body, $title, $user_id)
 {
     $dbh = connectDB();
-    $stmt = $dbh->query("SELECT * FROM posts WHERE email = '$email' && password = '$password' ");
-    return $stmt->fetch(PDO::FETCH_ASSOC); // one to show
+    $stmt = $dbh->query("SELECT * FROM posts WHERE body = '$body' && title = '$title'&& user_id = '$user_id' ");
+    return $stmt->fetch(PDO::FETCH_ASSOC); // onetitle
 }
+/* END ••• See post  \ Store-post / */
+
+/* See post \ Post / */
+function getPost($user_id) { // Find user name, email, ... using his id
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM posts WHERE id = '$user_id'");
+    return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
+}
+/* END ••• See post  \ Post / */
