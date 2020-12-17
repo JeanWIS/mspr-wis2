@@ -15,5 +15,8 @@ $dbh = connectDB();
 $query = $dbh->prepare('INSERT INTO posts (title, body, score_yuka, thumbnail , user_id	 ) VALUES (:title, :body, :score_yuka, :thumbnail, :user_id ) ');
 $query->execute($values);
 
+
+
+
 //header("Location: post.php?id=$id");
 ?>

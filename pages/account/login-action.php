@@ -20,9 +20,15 @@ $correct_login_and_pw = False;
         {
             session_start();
             $id = getUser_id($email, $password)['id'];
+            $first_name = getUser_id($email, $password)['first_name'];
+            $last_name = getUser_id($email, $password)['last_name'];
+            $birthday = getUser_id($email, $password)['birthday'];
             $_SESSION['user']['email'] = $email;
             $_SESSION['user']['password'] = $password;
-            $_SESSION['user']['id'] = $id;
+            $_SESSION['user']['last_name'] = $last_name;
+            $_SESSION['user']['first_name'] = $first_name;
+            $_SESSION['user']['birthday'] = $birthday;
+
 
             $correct_login_and_pw = True; //tell php that the login & pw entered are correct
         }

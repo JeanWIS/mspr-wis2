@@ -45,11 +45,11 @@
 
                                                         //if the string doesn't contain any space then it will cut without word basis.
                                                         $string = $endPoint ? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
-                                                        $string .= '... <a href="" class="btn btn-primary">See more</a>';
+                                                        $string .= '... <br><a href="user.php?id=$id> class="btn btn-primary mt-3">See more</a>';
                                                         $TextMore500 = false;
                                                     }
                                                     echo $string . "<br>";
-                                                    if ($TextMore500) { ?>  <a href="" class="btn btn-primary">See
+                                                    if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary " >See
                                                         Post</a> <?php
                                                     } ?>
                                                 </div>
