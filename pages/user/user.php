@@ -1,11 +1,10 @@
 <?php include_once '../../includes/head.php'; ?>
 <?php include_once '../../includes/header.php'; ?>
-<?php include_once '../../includes/sidebar.php'; ?>
 
-<!-- Friend_Status: 0 not_friend
-                    1 friend
-                    2 pending
--->
+    <!-- Friend_Status: 0 not_friend
+                        1 friend
+                        2 pending
+    -->
 
 <?php
 
@@ -18,36 +17,48 @@ $friendOrNotFriend = areWeFriends($id, $user_id);
 
 ?>
 
-<article>
-    <div class="container p-5 mt-5">
 
-        <?php
-        if ($friendOrNotFriend):
-            if ($friendOrNotFriend['status'] !== 1) :
-                ?>
-                <h2> <?php echo $user['first_name'] ?> </h2>
-                <h4>Member since <?php echo $user['created_at'] ?> </h4>
-                <a href="delete-friend.php?id=<?php echo $user['id']; ?>" class="btn btn-danger">UnFollow</a>
-            <?php
-            else :
-                ?>
-                <h2> <?php echo $user['first_name'] ?> </h2>
-                <h4>Member since <?php echo $user['created_at'] ?> </h4>
-                <a href="add-friend.php?id=<?php echo $user['id']; ?>" class="btn btn-primary">Follow</a>
-            <?php
-            endif;
+    <main id="main">
 
-        else:
-            ?>
-            <h2> <?php echo $user['first_name'] ?> </h2>
-            <h4>Member since <?php echo $user['created_at'] ?> </h4>
-            <a href="add-friend.php?id=<?php echo $user['id']; ?>" class="btn btn-primary">Follow</a>
-        <?php
-        endif;
+        <?php include_once '../../includes/sidebar.php'; ?>
 
-        ?>
+        <section id="content" style="min-height: 500px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
 
-    </div>
-</article>
+                        <?php
+                        if ($friendOrNotFriend):
+                            if ($friendOrNotFriend['status'] !== 1) :
+                                ?>
+                                <h2> <?php echo $user['first_name'] ?> </h2>
+                                <h4>Member since <?php echo $user['created_at'] ?> </h4>
+                                <a href="delete-friend.php?id=<?php echo $user['id']; ?>" class="btn btn-danger">UnFollow</a>
+                            <?php
+                            else :
+                                ?>
+                                <h2> <?php echo $user['first_name'] ?> </h2>
+                                <h4>Member since <?php echo $user['created_at'] ?> </h4>
+                                <a href="add-friend.php?id=<?php echo $user['id']; ?>"
+                                   class="btn btn-primary">Follow</a>
+                            <?php
+                            endif;
+
+                        else:
+                            ?>
+                            <h2> <?php echo $user['first_name'] ?> </h2>
+                            <h4>Member since <?php echo $user['created_at'] ?> </h4>
+                            <a href="add-friend.php?id=<?php echo $user['id']; ?>" class="btn btn-primary">Follow</a>
+                        <?php
+                        endif;
+                        ?>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 
 <?php include_once '../../includes/footer.php'; ?>

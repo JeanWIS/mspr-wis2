@@ -9,6 +9,17 @@ $post = getPost($user_id);// Execute the function that will find the post with t
 // Am I the creator of this post, Yes or No
 $id = $_SESSION['user']['id'];
 
+
+/*
+// Like
+//$isPostLikedByMe = false;
+
+if ($isPostLikedByMe) {
+    if ($isPostLikedByMe['status'] !== 1) {
+        echo "this post is liked";
+    }
+}
+*/
 ?>
 
     <main id="main">
@@ -42,9 +53,28 @@ $id = $_SESSION['user']['id'];
 
                         else:
                             ?>
+                            <div class="d-flex align-content-end">
+                                <?php
+                                /* Code for the like button */
 
-                            <i class="fas fa-bookmark"></i>
+                                $isPostLikedByMe = isPostLiked($user_id, $id);
+                                $notLiked = true; // default true this post is not liked
+                                if ($isPostLikedByMe) {
+                                    if ($isPostLikedByMe['status'] == 1) {
+                                        ?>
+                                        <i class="fas fa-bookmark fa-10x text-secondary"></i>
+                                        <?php
+                                        $notLiked = false;
+                                    }
+                                }
+                                if ($notLiked) {
+                                    ?>
+                                    <i class="far fa-bookmark fa-10x text-secondary"></i>
+                                    <?php
+                                }
+                                ?>
 
+                            </div>
                         <?php
                         endif;
                         ?>
