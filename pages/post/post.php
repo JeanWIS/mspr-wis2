@@ -32,7 +32,7 @@ if ($isPostLikedByMe) {
                     <img src="<?php echo $post['thumbnail']; ?>" class="img-fluid card-img-top" alt="" style="border-radius: 10px">
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-8">
 
                                 <div class="container mt-3">
                                     <?php if (isset($post['title'])): ?>
@@ -46,10 +46,10 @@ if ($isPostLikedByMe) {
                                     <?php endif; ?>
                                 </div>
                             </div> <!-- Content -->
-                            <div class="col-12 ">
+                            <div class="col-4 ">
                                 <?php if ($post['user_id'] === $id): ?>
                                 <?php else: ?>
-                                    <div class="d-flex align-content-end">
+                                    <div class=" p-5 ">
                                         <?php
                                         /* Code for the like button */
 
@@ -59,7 +59,7 @@ if ($isPostLikedByMe) {
                                         if ($isPostLikedByMe) {
                                             if ($isPostLikedByMe['status'] == 1) {
                                                 ?>
-                                                <a href="../like/like-store.php?id=<?php echo $post['id']; ?>">
+                                                <a href="../like/unlike-store.php?id=<?php echo $post['id']; ?>">
                                                     <i class="fas fa-bookmark fa-4x"></i>
                                                 </a>
                                                 <?php

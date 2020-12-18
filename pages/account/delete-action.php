@@ -9,4 +9,4 @@ $stmt->execute();
 session_unset();
 
 
-header("Location: /mspr-wis2/pages/feed.php");
+header("Location: /mspr-wis2");

@@ -5,14 +5,14 @@
             <div class="col-lg-6">
                 <div class="mb-3">
                     <label>Prénom</label>
-                    <input class="form-control" name="first_name" id="first_name" placeholder="Ronan"
+                    <input class="form-control" name="first_name" id="first_name" placeholder="Prénom"
                            required>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="mb-3">
                     <label>Nom</label>
-                    <input class="form-control" name="last_name" id="last_name" placeholder="Met un 20 !"
+                    <input class="form-control" name="last_name" id="last_name" placeholder="Nom"
                            required>
                 </div>
             </div>
@@ -31,7 +31,7 @@
 
         <div class="mb-3">
             <label for="password">Votre mot de passe</label>
-            <input type="text" id="password" name="password" class="form-control" value="" required>
+            <input type="password" id="password" name="password" class="form-control" value="" required>
             <div id="passwordHelpBlock" class="form-text">
                 Votre mot de passe doit être compris entre 8 et 20 caractères, doit contenir des lettres
                 et

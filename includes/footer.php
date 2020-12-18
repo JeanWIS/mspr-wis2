@@ -21,14 +21,11 @@
                     <li>
                         <a href="#!">Aide</a>
                     </li>
-                    <li>
-                        <a href="#!">Lâche toi sur la note Ronan !</a>
-                    </li>
                 </ul>
             </div>
             <div class="col-md-3 mx-auto">
                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Ollakino</h5>
-                <img src="../../assets/images/Logo-Ollakino.png">
+                <img src="https://cdn.discordapp.com/attachments/788842884065132607/788843163144945664/Logo-Ollakino.png">
             </div>
         </div>
     </div>

@@ -14,15 +14,17 @@
             <div class="row">
                 <div class="col-10">
                     <?php
-                    if ($friends_id = getMyFeed($_SESSION['user']['id'])) :
-                        foreach ($friends_id as $friend_id) :
+                    if ($friends_id = getMyFeed($_SESSION['user']['id'])) : // Find Id friend
+                        foreach ($friends_id as $friend_id) : // Foreach friend
                             if ($posts = getMyFeedPosts($friend_id['friend_id'])) :
                                 foreach ($posts as $post) :
                                     ?>
                                     <!-- Page Content -->
                                     <div class="container p-5">
                                         <h1> <?php echo $post['title'] ?> </h1>
-                                        <h6><?php echo $post['created_at'];?> </h6>
+                                        <h6><?php $created_at = $post['created_at'];
+                                            include_once '../includes/time.php'
+                                            ?> </h6>
                                         <div class="row">
                                             <div class="col-6">
                                                 <img src="<?php echo $post['thumbnail'] ?>" alt=""

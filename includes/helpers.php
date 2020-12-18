@@ -63,7 +63,7 @@ function areWeFriends($user_id, $friend_id)
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
 }
 
-/* See  my feed, with all posts from my posts \ ID /  */
+/* See  my feed, with all posts from my posts \ ID / Who are the ID Friends  */
 function getMyFeed($my_id)
 {
     $dbh = connectDB();
@@ -75,10 +75,10 @@ function getMyFeed($my_id)
 
 
 /* See  my feed, with all posts from my posts \ Post /  */
-function getMyFeedPosts($friend_id)
+function getMyFeedPosts($id) // FInd post based on the ID of the person who posted it
 {
     $dbh = connectDB();
-    $stmt = $dbh->query("SELECT * FROM `posts` WHERE user_id = '$friend_id'");
+    $stmt = $dbh->query("SELECT * FROM `posts` WHERE user_id = '$id'");
     return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
 }
 
