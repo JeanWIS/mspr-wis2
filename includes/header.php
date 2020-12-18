@@ -2,9 +2,12 @@
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
             <div class="col-2">
+                <a href="http://localhost:8888/mspr-wis2/pages/feed.php">
                 <img class="img-fluid" style="height: 100px"
                      src="https://cdn.discordapp.com/attachments/788842884065132607/788843163144945664/Logo-Ollakino.png"
-                     alt="Logo du Réseau social"></div>
+                     alt="Logo du Réseau social">
+                </a>
+            </div>
             <div class="col-6">
                 <form method="get" action="search.php" class="d-flex">
                     <input id="search" class="form-control " type="search" placeholder="Rechercher des amis"

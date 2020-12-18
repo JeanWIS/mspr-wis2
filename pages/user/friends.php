@@ -18,13 +18,13 @@
                     ?>
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1>Tous mes amis</h1>
+                            <h1>Tous mes Ollakiners</h1>
                         </div>
                     </div>
 
                     <div class="container">
                         <?php include_once '../../includes/table_friends.php'; ?>
-                        <a class="btn btn-primary mt-4" href="all-users.php">Ajouter de nouveaux amis</a>
+                        <a class="btn btn-primary mt-4" href="all-users.php">Ajouter quelqu'un</a>
 
                     </div>
                 </div>

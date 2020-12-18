@@ -14,7 +14,8 @@ $query = $dbh->prepare('INSERT INTO friends (user_id, friend_id, status) VALUES 
 $query->execute($values);
 
 
-header("Location: /mspr-wis2/pages/feed.php");
+header("Location: /mspr-wis2/pages/user/user.php?id=$friend_id");
+//header("Location: ../user/user.php?id=$friend_id");
 
 ?>
 

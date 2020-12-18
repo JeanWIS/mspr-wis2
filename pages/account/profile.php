@@ -17,7 +17,7 @@ $last_name = $_SESSION['user']['last_name'];
                     <h1><?php echo $first_name . ' ' . $last_name ?> </h1>
                     <div class="d-grid-sm gap-2 col-6">
                         <a href="edit.php" class="btn btn-primary">Editer mon profil</a>
-                        <a href="delete-action.php" class="btn btn-secondary">Supprimer mon profil</a>
+                        <a href="delete-action.php" class="btn btn-secondary mt-1">Supprimer mon profil</a>
                     </div>
 
                 </div>
@@ -65,9 +65,7 @@ $last_name = $_SESSION['user']['last_name'];
     </section>
     <div>
 
-
         <?php
-
         // Based on my id
         $myId = $_SESSION['user']['id'];
         // find post that have user_id = my ID
@@ -88,7 +86,7 @@ $last_name = $_SESSION['user']['last_name'];
                         <div class="col-6">
                             <div>
                                 <div class="card-header">
-                                    Created by ME
+                                    Publié par MOI
                                 </div>
                             </div>
                             <div class="content-post mt-3">
@@ -109,10 +107,9 @@ $last_name = $_SESSION['user']['last_name'];
                                 }
                                 echo $string;
                                 if (strlen($string) > 500) :
-                                    ?> <a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">See more</a><br> <?php
+                                    ?> <a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">Voir plus</a><br> <?php
                                 endif;
-                                if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" >See
-                                    Post</a> <?php
+                                if ($TextMore500) { ?>  <br><a href="../post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" > Voir ma recette </a> <?php
                                 } ?>
                             </div>
                         </div>

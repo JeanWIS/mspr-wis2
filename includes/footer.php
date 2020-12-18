@@ -42,7 +42,6 @@
 </script>
 </body>
 </html>
-<?php include_once('debugbar.php'); ?>
 
 <?php
 /*

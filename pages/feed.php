@@ -22,9 +22,7 @@
                                     <!-- Page Content -->
                                     <div class="container p-5">
                                         <h1> <?php echo $post['title'] ?> </h1>
-                                        <h6><?php $created_at = $post['created_at'];
-                                            include_once '../includes/time.php'
-                                            ?> </h6>
+                                        <h6><?php echo $post['created_at']; ?></h6>
                                         <div class="row">
                                             <div class="col-6">
                                                 <img src="<?php echo $post['thumbnail'] ?>" alt=""

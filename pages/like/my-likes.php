@@ -54,9 +54,9 @@
                                                     }
                                                     echo $string;
                                                     if (strlen($string) > 500) :
-                                                        ?> <a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">Voir plus</a><br> <?php
+                                                        ?> <a href="../post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">Voir plus</a><br> <?php
                                                     endif;
-                                                    if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" > Voir la recette</a> <?php
+                                                    if ($TextMore500) { ?>  <br><a href="../post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" > Voir la recette</a> <?php
                                                     } ?>
 
 

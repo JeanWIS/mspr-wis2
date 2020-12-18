@@ -16,9 +16,9 @@
                      alt="Logo du réseau social"></div>
             <div class="col-6">
             </div>
-            <div class="col-2 d-flex justify-content-around">
-                <a href="./pages/account/login.php" class="btn btn-secondary"> Login </a>
-                <a href="./pages/account/register.php" class="btn btn-outline-secondary"> Sign up </a>
+            <div class="col-3 d-flex justify-content-around">
+                <a href="./pages/account/login.php" class="btn btn-secondary"> Se connecter </a>
+                <a href="./pages/account/register.php" class="btn btn-outline-secondary"> S'inscrire </a>
             </div>
         </div>
     </nav>
@@ -52,9 +52,8 @@
         </div>
         <div class="col-md-6 align-self-center p-5">
             <h1 class="d-inline-block mb-2 p-3text-center">Une App, une Passion, la Cuisine</h1>
-            <p>La cuisine est maintenant rentré dans notre quotidien, nous mangeons 3 fois par jours voir plus, il est
-                esentiel d'aimer ce qui se trouve dans notre assiete. Nous vous aiderons à trouver une inspiration de
-                cuisine.</p>
+            <p>Ollakino est le nouveau réseau social culinaire ! Vous avez beaucoup cuisiné en 2020 ou appris à cuisiner ? Alors suivez les recettes des plus grands chefs, mais aussi des particuliers du coin aux talents innombrables !</p>
+
             <a href="./pages/account/register.php" class="btn btn-secondary"> Se créer un compte </a>
         </div>
     </div>
