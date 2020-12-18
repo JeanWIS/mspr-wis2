@@ -28,6 +28,7 @@ $correct_login_and_pw = False;
             $_SESSION['user']['last_name'] = $last_name;
             $_SESSION['user']['first_name'] = $first_name;
             $_SESSION['user']['birthday'] = $birthday;
+            $_SESSION['user']['id'] = $id;
 
 
             $correct_login_and_pw = True; //tell php that the login & pw entered are correct

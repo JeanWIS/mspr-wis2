@@ -27,21 +27,26 @@ if ($isPostLikedByMe) {
         <?php include_once '../../includes/sidebar.php' ?>
 
         <section id="content">
-            <div class="card">
-                <div class="row">
-                    <img src="<?php echo $post['thumbnail']; ?>" class="img-fluid" alt="" style="width:40%;">
-                    <div class="col-10">
+            <div class="card m-auto" style=" width: 30rem; ">
+                <div class="row p-1">
+                    <img src="<?php echo $post['thumbnail']; ?>" class="img-fluid card-img-top" alt="" style="border-radius: 10px">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-1"> </div>
-                            <div class="col-8">
+                            <div class="col-12">
 
                                 <div class="container mt-3">
-                                    <h5 class="card-title"> <?php echo $post['title']; ?>  </h5>
-                                    <h6 class="yuka"> Score Yuka : <?php echo $post['score_yuka']; ?>  </h6>
-                                    <p class="card-text"> <?php echo $post['body']; ?>  </p>
+                                    <?php if (isset($post['title'])): ?>
+                                        <h5 class="card-title"><?php echo $post['title']; ?>  </h5>
+                                    <?php endif; ?>
+                                    <?php if (isset($post['score_yuka'])): ?>
+                                        <h6 class="yuka"> Score Yuka : <?php echo $post['score_yuka']; ?>  </h6>
+                                    <?php endif; ?>
+                                    <?php if (isset($post['body'])): ?>
+                                        <p class="card-text"> <?php echo $post['body']; ?>  </p>
+                                    <?php endif; ?>
                                 </div>
                             </div> <!-- Content -->
-                            <div class="col-1 p-5 ">
+                            <div class="col-12 ">
                                 <?php if ($post['user_id'] === $id): ?>
                                 <?php else: ?>
                                     <div class="d-flex align-content-end">
@@ -75,7 +80,7 @@ if ($isPostLikedByMe) {
                             </div><!-- SAVE -->
                         </div>
 
-                        <div class="container">
+                        <div class="card-header">
                             <a type="button" class="btn btn btn-danger w-100 mb-3"
                                href="delete.php?id=<?php echo $post['id']; ?>">
                                 <i class="fas fa-trash text-white"></i>
@@ -84,9 +89,7 @@ if ($isPostLikedByMe) {
                             <a href="" class="btn btn-secondary d-grid gap-2 ">Mettre à jour mon post</a>
                         </div> <!-- BTN -->
 
-                        <div class="card-header">
-                            <!---LIKE AND OTHER BTN-->
-                        </div>
+
 
                     </div>
                 </div>

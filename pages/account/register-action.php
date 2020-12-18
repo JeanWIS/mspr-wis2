@@ -23,5 +23,6 @@ $_SESSION['user']['first_name'] = $values['first_name'];
 $_SESSION['user']['last_name'] = $values['last_name'];
 $_SESSION['user']['birthday'] = $values['birthday'];
 $_SESSION['user']['id'] = $id;
+
 header("Location: /mspr-wis2/pages/feed.php?id=$id");
 ?>
