@@ -11,7 +11,7 @@ function assetsPath()
 function connectDB()
 {
     // On se connecte a la base de données
-    return new PDO('mysql:host=localhost;dbname=msprwis2', 'root', 'root',
+    return new PDO('mysql:host=localhost;dbname=ollakino', 'root', 'root',
         [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET  NAMES utf8']
     );
 
@@ -97,7 +97,7 @@ function getPost_id($body, $title, $user_id)
 
 /* See post \ Post / */
 function getPost($user_id)
-{ // Find user name, email, ... using his id
+{ // Find post data using the id of someone
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM posts WHERE id = '$user_id'");
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
@@ -111,4 +111,19 @@ function isPostLiked($post_id, $user_id)
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM `likes` WHERE post_id = '$post_id' && user_id = '$user_id'");
     return $stmt->fetch(PDO::FETCH_ASSOC); // many to show
+}
+
+/* Find posts that I liked  */
+function getPostLiked($id) {
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM `likes` WHERE user_id = '$id'");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
+}
+
+// From the post id find the post info
+function getPosts($post_id)
+{ // Find post data using the id of someone
+    $dbh = connectDB();
+    $stmt = $dbh->query("SELECT * FROM posts WHERE id = '$post_id'");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
 }

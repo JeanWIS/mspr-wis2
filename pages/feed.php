@@ -33,7 +33,7 @@
                                             <div class="col-6">
                                                 <div>
                                                     <div class="card-header">
-                                                        Created by <?php $user =  getUser($post['user_id']);
+                                                        Créé(e) par <?php $user =  getUser($post['user_id']);
                                                         echo $user['first_name'] . " " . $user['last_name']; ?>
                                                     </div>
                                                 </div>
@@ -50,15 +50,15 @@
 
                                                         //if the string doesn't contain any space then it will cut without word basis.
                                                         $string = $endPoint ? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
-                                                        $string .= '... <br>';
+                                                        $string .= ' ... <br>';
                                                         $TextMore500 = false;
                                                     }
                                                     echo $string;
                                                     if (strlen($string) > 500) :
-                                                    ?> <a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">See more</a><br> <?php
+                                                    ?> <a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3">Voir plus</a><br> <?php
                                                     endif;
-                                                    if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" >See
-                                                        Post</a> <?php
+                                                    if ($TextMore500) { ?>  <br><a href="post/post.php?id=<?php echo $post['id']; ?>" class="btn btn-primary mt-3" >Voir
+                                                        Recette</a> <?php
                                                     } ?>
                                                 </div>
                                             </div>

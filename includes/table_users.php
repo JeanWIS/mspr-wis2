@@ -31,6 +31,5 @@
             <?php endif; ?>
             </tbody>
         </table>
-        <a class="btn btn-primary mt-4">Ajouter un nouvel ami</a>
     </div>
 </section>

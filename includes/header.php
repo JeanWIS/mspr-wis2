@@ -2,7 +2,8 @@
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
             <div class="col-2">
-                <img class="img-fluid" style="height: 100px" src="https://cdn.discordapp.com/attachments/788842884065132607/788843163144945664/Logo-Ollakino.png"
+                <img class="img-fluid" style="height: 100px"
+                     src="https://cdn.discordapp.com/attachments/788842884065132607/788843163144945664/Logo-Ollakino.png"
                      alt="Logo du Réseau social"></div>
             <div class="col-6">
                 <form method="get" action="search.php" class="d-flex">
@@ -13,7 +14,10 @@
                     </button>
                 </form>
             </div>
-            <div class="col-4">
+            <div class="col-4" style="margin-left: 200px">
+                <a href="http://localhost:8888/mspr-wis2/pages/like/my-likes.php" class="btn btn-secondary">
+                    <i class="fas fa-bookmark text-white"></i> Mes sauvegardes </a>
+
             </div>
         </div>
     </nav>
