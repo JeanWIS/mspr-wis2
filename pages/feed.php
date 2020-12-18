@@ -14,6 +14,8 @@
             <div class="row">
                 <div class="col-10">
                     <?php
+
+
                     if ($friends_id = getMyFeed($_SESSION['user']['id'])) : // Find Id friend
                         foreach ($friends_id as $friend_id) : // Foreach friend
                             if ($posts = getMyFeedPosts($friend_id['friend_id'])) :
