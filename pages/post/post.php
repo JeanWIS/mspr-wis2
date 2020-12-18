@@ -80,14 +80,22 @@ if ($isPostLikedByMe) {
                             </div><!-- SAVE -->
                         </div>
 
-                        <div class="card-header">
-                            <a type="button" class="btn btn btn-danger w-100 mb-3"
-                               href="delete.php?id=<?php echo $post['id']; ?>">
-                                <i class="fas fa-trash text-white"></i>
-                                <span>Supprimer mon post</span>
-                            </a>
-                            <a href="" class="btn btn-secondary d-grid gap-2 ">Mettre à jour mon post</a>
-                        </div> <!-- BTN -->
+                        <?php
+                        if ($post['user_id'] ===$id ){
+                            ?>
+                            <div class="card-header">
+                                <a type="button" class="btn btn btn-danger w-100 mb-3"
+                                   href="delete.php?id=<?php echo $post['id']; ?>">
+                                    <i class="fas fa-trash text-white"></i>
+                                    <span>Supprimer mon post</span>
+                                </a>
+                                <a href="" class="btn btn-secondary d-grid gap-2 ">Mettre à jour mon post</a>
+                            </div> <!-- BTN -->
+                                <?php
+                        }
+                        ?>
+                        
+
 
 
 

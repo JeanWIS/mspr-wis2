@@ -11707,6 +11707,17 @@ fieldset:disabled .btn {
   margin-bottom: 0.3rem;
 }
 
+.fond img {
+  overflow: hidden;
+  transform: scale(1);
+  transition: 0.2s ease all;
+}
+
+.fond img:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease all;
+}
+
 .footer {
   background-color: #630887;
   color: white;

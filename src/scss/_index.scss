@@ -1,17 +1,30 @@
-.mockup img{
+.mockup img {
   width: 80%;
   height: auto;
   margin-left: 7rem;
 }
 
-.team img{
+.team img {
   width: 25%;
   height: auto;
   margin-left: 7rem;
 }
 
-.download{
+.download {
   margin-top: 1.5rem;
   margin-bottom: 0.3rem;
 }
+
+.fond {
+  img {
+    overflow: hidden;
+    transform: scale(1);
+    transition: .2s ease all;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: .2s ease all;
+    }
+  }
+  }
 

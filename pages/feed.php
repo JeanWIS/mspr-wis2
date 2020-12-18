@@ -70,7 +70,17 @@
                                 endforeach;
                             endif;
                         endforeach;
+                        else:
+                            ?>
+                    <div class="container p-5" style="min-height: 400px">
+                        <h2>Nouveau sur Ollakino ? </h2>
+                        <p>Première étape: se trouver un cuisinier qui te plaît</p>
+
+                        <a href="user/all-users.php" class="btn btn-secondary"> Trouver un Ollakino Cooker </a>
+                    </div>
+                    <?php
                     endif;
+
                     ?>
                 </div>
             </div>
@@ -80,42 +90,6 @@
 </main>
 
 
-<?php
-/*
-require_once '../vendor/autoload.php'; //charger dépendnaces
-
-use Carbon\Carbon;
-
-printf("Right now is %s", Carbon::now()->toDateTimeString());
-printf("Right now in Vancouver is %s", Carbon::now('America/Vancouver')); // automatically converted to string
-$today = Carbon::now();
-echo $today . "<br>";
-$lastWeek = Carbon::now()->subWeek();
-echo $lastWeek . "<br>";
-echo $today-$lastWeek;
-
-
-
-// Carbon embed 822 languages:
-echo $tomorrow->locale('fr')->isoFormat('dddd, MMMM Do YYYY, h:mm');
-echo $tomorrow->locale('ar')->isoFormat('dddd, MMMM Do YYYY, h:mm');
-
-$officialDate = Carbon::now()->toRfc2822String();
-
-$howOldAmI = Carbon::createFromDate(1975, 5, 21)->age;
-
-$noonTodayLondonTime = Carbon::createFromTime(12, 0, 0, 'Europe/London');
-
-$internetWillBlowUpOn = Carbon::create(2038, 01, 19, 3, 14, 7, 'GMT');
-
-if (Carbon::now()->isWeekend()) {
-    echo 'Party!';
-}
-echo Carbon::now()->subMinutes(2)->diffForHumans(); // '2 minutes ago'
-
-// Want to know more about diffForHumans? Double-click on the method name!
-
-*/
-include_once '../includes/footer.php'; ?>
+<?php include_once '../includes/footer.php'; ?>
 
 

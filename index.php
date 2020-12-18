@@ -31,13 +31,15 @@
         <div class="row" style="min-height: calc(100vh - 300px)">
 
             <div class="col-md-6 align-self-center p-5">
-                <?php  include_once './includes/forms_register_home.php' ?>
+                <?php include_once './includes/forms_register_home.php' ?>
             </div>
             <div class="col-md-6 align-self-center">
+                <img src="assets/images/mockuper.png" class="img-fluid" alt="">
             </div>
         </div>
     </div>
 </div>
+
 <section>
     <div class="row" style="min-height: calc(100vh - 300px)">
         <div class="col-md-6 align-self-center">
@@ -49,10 +51,11 @@
             </div>
         </div>
         <div class="col-md-6 align-self-center p-5">
-            <h1 class="d-inline-block mb-0 p-3text-center">Mon titre</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi, corporis dolorum laboriosam
-                laudantium quibusdam ratione sint? Ab, ad adipisci aperiam consequatur dolorum et impedit ipsam labore
-                magnam minima mollitia, natus nemo nostrum quaerat.</p>
+            <h1 class="d-inline-block mb-2 p-3text-center">Une App, une Passion, la Cuisine</h1>
+            <p>La cuisine est maintenant rentré dans notre quotidien, nous mangeons 3 fois par jours voir plus, il est
+                esentiel d'aimer ce qui se trouve dans notre assiete. Nous vous aiderons à trouver une inspiration de
+                cuisine.</p>
+            <a href="./pages/account/register.php" class="btn btn-secondary"> Se créer un compte </a>
         </div>
     </div>
 </section>
